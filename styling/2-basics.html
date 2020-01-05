@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title>First website</title>
+        <style type="text/css">
+            /*
+                En esta seccion de estilo se definen
+                las classes y ids con las propiedades.
+
+                El estandar es llamado CSS Cascade Style
+                Sheet.
+
+                Basicamente una class o id tiene un conjunto
+                de propiedades de typo:
+
+                propiedad:valor;
+
+            */
+            
+            /*
+                Aqui indicamos que los elementos con id intro
+                tiene alineacion centrada, color azul y fuente tipo
+                arial.
+            */
+            #intro {
+                text-align: center;
+                color: Blue;
+                font-family: Arial;
+            }
+
+            /*
+                Aqui indicamos que los elementos con clase box e info,
+                tienen borde de tamano 2pt, solido y negro. Ademas de un 
+                margen de 10 pixeles.
+            */
+
+            .box , .info {
+                border: 2pt solid black;
+                margin-top: 10px;
+            }
+
+            /*
+                aqui se indica que los elementos con  clase box e id intro
+                solo los que son de tipo p recibiran las siguientes reglas:
+
+                color del texto : negro
+            */
+            .box p, #intro p{
+                color: black;
+            }
+
+            /*
+                Todo los elementos de tipo p "paragraph" tienen 
+                texto justicado y tienen un margen de 5 pixeles.
+
+            */
+            p {
+                text-align: justify;
+                margin: 5px;
+            }
+
+            /* 
+                La clase article-description tiene fuente de tipo arial.
+            */
+            .article-description{
+                font-family: arial;
+            }
+
+            /*
+                investigue mas propiedades que pueden recibir
+                estos elementos y haga los cambios q desee en este 
+                diseno de introduccion de articulos.
+            */
+
+        </style>
+    </head>
+    <body>
+        <div id="intro" class="">
+            <h1>WIKIA</h1>
+            <p>
+                Este es un sitio para documentacion. En este lugar
+                se escribe acerca de procedimientos y procesos de 
+                la compania.
+            </p>    
+        </div>
+
+        <div class="info">
+            <p>
+                Ultimas noticias.
+            </p>
+        </div>
+
+        <div id="article-1" class="article-description box">
+            <h3>
+                Como hacemos el deployment de paginas web en nuestra compania?
+            </h3>
+            
+            <p>
+                "Deployment" es un procedimiento por el cual una compania publica
+                los ultimos entregables "deliverables", a un entorno "environment"
+                
+                Para conocer mas acerca de esos asuntos haga click 
+                <a href="pages/procedures-deployment.html">aqui</a>
+            </p>
+        </div>
+
+        <div id="article-2" class="article-description box">
+            <h3>
+                Conozca mas acerca de nuestro procedimientos de pruebas UAT and QA.
+            </h3>
+            
+            <p>
+                Nuestra compania tambien implementa, procedimientos de pruebas unitarias,
+                UAT (User Acceptance Testing), QA (Quality Assurance) procedimientos y entornos.
+                Para conocer mas haga click <a href="pages/procedures-deployment.html">aqui</a>
+            </p>
+        </div>
+        
+    </body>
+</html>
